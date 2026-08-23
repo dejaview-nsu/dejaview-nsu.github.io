@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Node (на случай будущей сборки)
+node_modules/
+dist/
+.cache/
+
+# устаревшая презентация — не публикуем
+assets/DejaView.presentation.pdf

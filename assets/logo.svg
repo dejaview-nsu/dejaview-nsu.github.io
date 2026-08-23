@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="DejaView">
+  <rect width="240" height="240" rx="52" fill="#241812"/>
+  <!-- film edges -->
+  <rect x="0" y="0" width="26" height="240" fill="#3a2817"/>
+  <rect x="214" y="0" width="26" height="240" fill="#3a2817"/>
+  <!-- perforations -->
+  <g fill="#ece0c6">
+    <rect x="7"   y="18"  width="12" height="20" rx="3"/>
+    <rect x="7"   y="55"  width="12" height="20" rx="3"/>
+    <rect x="7"   y="92"  width="12" height="20" rx="3"/>
+    <rect x="7"   y="129" width="12" height="20" rx="3"/>
+    <rect x="7"   y="166" width="12" height="20" rx="3"/>
+    <rect x="7"   y="203" width="12" height="20" rx="3"/>
+    <rect x="221" y="18"  width="12" height="20" rx="3"/>
+    <rect x="221" y="55"  width="12" height="20" rx="3"/>
+    <rect x="221" y="92"  width="12" height="20" rx="3"/>
+    <rect x="221" y="129" width="12" height="20" rx="3"/>
+    <rect x="221" y="166" width="12" height="20" rx="3"/>
+    <rect x="221" y="203" width="12" height="20" rx="3"/>
+  </g>
+  <!-- monogram -->
+  <text x="120" y="150" font-family="Georgia,'Times New Roman',serif" font-size="104" font-weight="bold" fill="#d99a1c" text-anchor="middle" letter-spacing="-4">DV</text>
+  <!-- wordmark -->
+  <text x="120" y="196" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#ece0c6" text-anchor="middle" letter-spacing="4">DEJAVIEW</text>
+</svg>
