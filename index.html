@@ -133,17 +133,6 @@
   .who-card h3{font-family:var(--disp);font-weight:800;font-size:26px;margin-bottom:10px}
   .who-card p{color:var(--ink2);font-size:14.5px;line-height:1.55}
 
-  .cast{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-  .role{position:relative;background:var(--card);border:2px solid var(--ink);box-shadow:6px 6px 0 var(--ink);padding:24px 22px;transition:transform .14s,box-shadow .14s}
-  .role:hover{transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--rust)}
-  .role .cnt{font-family:var(--disp);font-weight:900;font-size:50px;color:var(--rust);line-height:.9}
-  .role .cnt span{font-size:18px;color:var(--ink2);font-family:var(--lab);text-transform:uppercase;letter-spacing:.08em}
-  .role h3{font-family:var(--disp);font-weight:800;font-size:21px;margin:10px 0 8px;border-top:2px dashed var(--line);padding-top:12px}
-  .role p{color:var(--ink2);font-size:13px;line-height:1.5}
-  .role .tags{margin-top:12px;font-family:var(--lab);text-transform:uppercase;letter-spacing:.08em;font-size:10.5px;color:var(--rust);font-weight:600}
-  .castnote{margin-top:26px;display:flex;gap:14px;align-items:flex-start;background:var(--card);border:2px dashed var(--ink);padding:22px 24px}
-  .castnote .st{font-size:24px;color:var(--mustard)}
-  .castnote p{font-size:15px;color:var(--ink2)} .castnote b{color:var(--ink)}
 
   #contact .card{display:grid;grid-template-columns:1.2fr .8fr;border:3px solid var(--ink);background:var(--card);box-shadow:10px 10px 0 var(--ink)}
   #contact .left{padding:clamp(30px,5vw,56px)}
@@ -167,20 +156,20 @@
   footer a:hover{color:var(--mustard)}
 
   @media(max-width:860px){
-    .tickets,.stack-grid,.cast,.cases{grid-template-columns:1fr 1fr}
+    .tickets,.stack-grid,.cases{grid-template-columns:1fr 1fr}
     .aud{grid-template-columns:1fr}
     #contact .card{grid-template-columns:1fr}
     .task{grid-template-columns:52px 1fr;gap:18px}
     .perf{display:none}
   }
-  @media(max-width:520px){.tickets,.stack-grid,.cast,.cases{grid-template-columns:1fr}}
+  @media(max-width:520px){.tickets,.stack-grid,.cases{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <div class="marq"><div class="track">
-  <span class="lab">Найди фильм по обрывку памяти<b>✦</b>Как Shazam, но для фильмов<b>✦</b>Открыт набор в команду<b>✦</b>Backend<b>✦</b>Frontend<b>✦</b>ML<b>✦</b>QA / DevOps<b>✦</b></span>
-  <span class="lab">Найди фильм по обрывку памяти<b>✦</b>Как Shazam, но для фильмов<b>✦</b>Открыт набор в команду<b>✦</b>Backend<b>✦</b>Frontend<b>✦</b>ML<b>✦</b>QA / DevOps<b>✦</b></span>
+  <span class="lab">Найди фильм по обрывку памяти<b>✦</b>Как Shazam, но для фильмов<b>✦</b>Текст<b>✦</b>Изображение<b>✦</b>Видео<b>✦</b>Аудио<b>✦</b></span>
+  <span class="lab">Найди фильм по обрывку памяти<b>✦</b>Как Shazam, но для фильмов<b>✦</b>Текст<b>✦</b>Изображение<b>✦</b>Видео<b>✦</b>Аудио<b>✦</b></span>
 </div></div>
 
 <nav>
@@ -189,7 +178,7 @@
     <a class="nl" href="#formats">Форматы</a>
     <a class="nl" href="#specs">Задачи</a>
     <a class="nl" href="#audience">Для кого</a>
-    <a class="nl" href="#team">Команда</a>
+    <a class="nl" href="assets/DejaView-TZ.pdf" target="_blank" rel="noopener">ТЗ</a>
     <a class="nl" href="https://github.com/dejaview-nsu">GitHub ↗</a>
   </div>
 </nav>
@@ -203,10 +192,10 @@
     <h1 class="up" style="animation-delay:.1s">DejaView</h1>
     <div class="tag up" style="animation-delay:.18s">«найди фильм, когда помнишь только сцену»</div>
     <div class="hook up" style="animation-delay:.24s">★ Как Shazam, но для фильмов ★</div>
-    <p class="say up" style="animation-delay:.3s">Не помнишь названия? Достаточно фразы, кадра, мелодии или короткого видео - сервис понимает воспоминание и находит фильм. Собираем команду, чтобы это построить.</p>
+    <p class="say up" style="animation-delay:.3s">Не помнишь названия? Достаточно фразы, кадра, мелодии или короткого видео - сервис понимает воспоминание и находит фильм.</p>
     <div class="btns up" style="animation-delay:.36s">
-      <a class="btn rust" href="#team">Хочу в команду ▸</a>
-      <a class="btn ghost" href="#formats">Что за проект</a>
+      <a class="btn rust" href="#formats">Как это работает ▸</a>
+      <a class="btn ghost" href="assets/DejaView-TZ.pdf" target="_blank" rel="noopener">Техническое задание</a>
     </div>
   </div>
 </header>
@@ -268,7 +257,7 @@
     <div class="head">
       <div>
         <div class="no up">◦ Задачи проекта</div>
-        <h2 class="up" style="animation-delay:.05s">Над чем <em>будешь работать</em></h2>
+        <h2 class="up" style="animation-delay:.05s">Над чем <em>работаем</em></h2>
       </div>
     </div>
     <div class="tasks">
@@ -298,13 +287,13 @@
     </div>
     <div class="stack-grid">
       <div class="scol up" style="animation-delay:.05s"><div class="k">Backend</div><h3>Сервер</h3>
-        <ul><li><b>Python</b></li><li><b>FastAPI</b></li><li>PostgreSQL</li><li>pgvector</li><li>REST API</li></ul></div>
+        <ul><li><b>C++</b></li><li>CMake</li><li>PostgreSQL</li><li>REST API</li><li>TMDB</li></ul></div>
       <div class="scol up" style="animation-delay:.12s"><div class="k">Frontend</div><h3>Клиент</h3>
-        <ul><li><b>React / Vue</b></li><li>TypeScript</li><li>SPA</li><li>Адаптивный UI</li></ul></div>
+        <ul><li><b>React</b></li><li>TypeScript</li><li>SPA</li><li>Адаптивный UI</li></ul></div>
       <div class="scol up" style="animation-delay:.19s"><div class="k">ML</div><h3>Поиск</h3>
-        <ul><li><b>HuggingFace</b></li><li>Эмбеддинги</li><li>Векторный поиск</li><li>pgvector / Qdrant</li></ul></div>
+        <ul><li><b>Python</b></li><li>HuggingFace</li><li>Эмбеддинги</li><li><b>Qdrant</b></li></ul></div>
       <div class="scol up" style="animation-delay:.26s"><div class="k">Инфра</div><h3>Обвязка</h3>
-        <ul><li><b>Docker</b></li><li>CI/CD</li><li>OpenAPI / Swagger</li><li>TMDB API</li></ul></div>
+        <ul><li><b>Docker</b></li><li>CI/CD</li><li>OpenAPI / Swagger</li><li>GitHub Actions</li></ul></div>
     </div>
   </div>
 </section>
@@ -326,35 +315,6 @@
   </div>
 </section>
 
-<!-- CASTING / TEAM -->
-<section id="team">
-  <div class="wrap">
-    <div class="head">
-      <div>
-        <div class="no up">◦ Открыт кастинг</div>
-        <h2 class="up" style="animation-delay:.05s">Ищем в <em>команду</em></h2>
-      </div>
-    </div>
-    <div class="cast">
-      <div class="role up" style="animation-delay:.05s"><div class="cnt">2 <span>места</span></div>
-        <h3>Backend</h3><p>API, логика поиска и профилей, интеграция TMDB, работа с базой данных.</p>
-        <div class="tags">Python · FastAPI · PostgreSQL</div></div>
-      <div class="role up" style="animation-delay:.12s"><div class="cnt">2 <span>места</span></div>
-        <h3>Frontend</h3><p>Интерфейс: 4 режима поиска, страница фильма, профиль пользователя.</p>
-        <div class="tags">React / Vue · TypeScript</div></div>
-      <div class="role up" style="animation-delay:.19s"><div class="cnt">1–2 <span>места</span></div>
-        <h3>ML-инженер</h3><p>Эмбеддинги, векторный поиск, качество выдачи по разным форматам.</p>
-        <div class="tags">HuggingFace · векторный поиск</div></div>
-      <div class="role up" style="animation-delay:.26s"><div class="cnt">1 <span>место</span></div>
-        <h3>QA / DevOps</h3><p>Тестирование, CI/CD, docker-окружение и деплой сервиса.</p>
-        <div class="tags">Testing · CI/CD · Docker</div></div>
-    </div>
-    <div class="castnote up" style="animation-delay:.3s">
-      <span class="st">★</span>
-      <p><b>Опыт не нужен.</b> Нужно только желание разбираться и делать. Всему научим с нуля, рядом будут кураторы-магистранты.</p>
-    </div>
-  </div>
-</section>
 
 <!-- CONTACT -->
 <section id="contact">
@@ -362,12 +322,12 @@
     <div class="card up">
       <div class="left">
         <div class="lab">Билетёр на связи</div>
-        <h2>Хочешь <em>в команду?</em></h2>
-        <p>DejaView - учебный проект ФИТ НГУ. Напиши в Telegram или сканируй код. В сообщении укажи:</p>
+        <h2>Есть <em>вопросы?</em></h2>
+        <p>DejaView - учебный проект ФИТ НГУ, этап реализации идёт сейчас. Напишите в Telegram или сканируйте код.</p>
         <ul class="apply">
-          <li><b>ФИО и группа</b></li>
-          <li><b>Направление</b> - можно несколько: Backend, Frontend, ML, QA / DevOps</li>
-          <li><b>Опыт</b> - если есть; «пока никакого» тоже ок</li>
+          <li><b>Исходный код</b> - открытые репозитории на GitHub</li>
+          <li><b>Техническое задание</b> - полный документ в PDF</li>
+          <li><b>Сотрудничество</b> - киноплатформам и разработчикам</li>
         </ul>
         <a class="tg" href="https://t.me/UsusCimex">@UsusCimex ▸</a>
       </div>
@@ -385,7 +345,6 @@
       <a href="#formats">Форматы</a>
       <a href="#specs">Задачи</a>
       <a href="#audience">Для кого</a>
-      <a href="#team">Команда</a>
       <a href="assets/DejaView-TZ.pdf" target="_blank" rel="noopener">ТЗ</a>
       <a href="https://github.com/dejaview-nsu">GitHub</a>
     </div>
